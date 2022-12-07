@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 270672350}
   - component: {fileID: 270672349}
   - component: {fileID: 270672352}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: City Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.43, y: 3.21}
+  m_AnchoredPosition: {x: 8.57, y: 2.3}
   m_SizeDelta: {x: 520, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &270672352
@@ -249,8 +249,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314988119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6288, y: -14.1062, z: 0}
-  m_LocalScale: {x: 7.9621415, y: 7.559459, z: 1}
+  m_LocalPosition: {x: -6.5206, y: -13.0698, z: 0}
+  m_LocalScale: {x: 4.7191615, y: 4.832006, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2124345606}
@@ -769,7 +769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198237794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.358309, y: -14.6007, z: -10}
+  m_LocalPosition: {x: 10.466509, y: -13.564301, z: -10}
   m_LocalScale: {x: 1, y: 4.1037498, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1913,7 +1913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776743195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.358309, y: -14.6007, z: -10}
+  m_LocalPosition: {x: 10.466509, y: -13.564301, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
