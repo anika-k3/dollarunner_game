@@ -353,7 +353,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1619723909
 RectTransform:
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 2079715218}
   - component: {fileID: 2079715220}
   - component: {fileID: 2079715219}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Click To Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}

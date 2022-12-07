@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &436793336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436793337}
+  m_Layer: 0
+  m_Name: Groundcheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &436793337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436793336}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.0165421, y: 0.8166416, z: 0}
+  m_LocalScale: {x: 0.12821455, y: 0.1276409, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2030544985}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &762709276
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,9 +465,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2030544985}
   - component: {fileID: 2030544984}
-  - component: {fileID: 2030544986}
   - component: {fileID: 2030544988}
   - component: {fileID: 2030544987}
+  - component: {fileID: 2030544989}
   m_Layer: 0
   m_Name: Mountain_Girl
   m_TagString: Untagged
@@ -504,30 +535,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030544983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.52, y: -2.84, z: 0}
+  m_LocalPosition: {x: -9.52, y: -2.64, z: 0}
   m_LocalScale: {x: 3.2625, y: 2.9999, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 436793337}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2030544986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030544983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474e24a3135f7f544ad412c6d4f794fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1248216679}
-  groundCheck: {fileID: 1248216681}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!50 &2030544987
 Rigidbody2D:
   serializedVersion: 4
@@ -575,3 +590,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46, y: 0.75}
   m_EdgeRadius: 0
+--- !u!114 &2030544989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030544983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474e24a3135f7f544ad412c6d4f794fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2030544987}
+  groundCheck: {fileID: 436793337}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
