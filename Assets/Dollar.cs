@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Dollar : MonoBehaviour, ICollectible
+public class Dollar : MonoBehaviour
 {
     public static event Action OnDollarCollected;
     Rigidbody2D rb;
