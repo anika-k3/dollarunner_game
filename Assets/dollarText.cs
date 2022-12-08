@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class dollarText : MonoBehaviour
+public class DollarText : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI dollarText;
 
-    // Update is called once per frame
-    void Update()
+    public void IncrementDollarCount(int dollarTotal)
     {
-        
+        dollarText.text = $"Dollars: {dollarTotal}";
     }
 }
