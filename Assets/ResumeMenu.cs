@@ -10,5 +10,6 @@ public class ResumeMenu : MonoBehaviour
     public void Resume(int sceneID)
     {
         SceneManager.LoadScene(sceneID);
+        Time.timeScale = 1;
     }
 }

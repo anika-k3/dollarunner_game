@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PlayMenu : MonoBehaviour
 {
-    [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject playMenu;
 
-    public void Pause(int sceneID)
+    public void Play(int sceneID)
     {
-        Time.timeScale = 0;
         SceneManager.LoadScene(sceneID);
     }
 }
