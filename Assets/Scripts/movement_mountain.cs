@@ -5,8 +5,8 @@ using UnityEngine;
 public class movement_mountain : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 16f;
+    private float speed = 14f;
+    private float jumpingPower = 20f;
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
