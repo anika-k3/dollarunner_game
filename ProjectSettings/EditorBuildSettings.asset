@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: 8a397d547a5850f4a9aca24078082665
   - enabled: 1
     path: Assets/Scenes/Mountain Scene.unity
-    guid: a4fab792ee45e4d0db730bf080ac4c4b
+    guid: 93f24f317c14d6143849bdbd25095255
   - enabled: 1
     path: Assets/Scenes/City Scene.unity
     guid: ce8ca3182a240461f8b15350a1bfbd8a
@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instructions Scene 3.unity
     guid: 8d423032fd4fc4c42b823e56af1c904d
+  - enabled: 1
+    path: Assets/Scenes/Levels Scene 1.unity
+    guid: 4c93bbf5a88fd3542ae7984eb0d50171
+  - enabled: 1
+    path: Assets/Scenes/Levels Scene 2.unity
+    guid: 072c1bfb26b3d4c48972a14bff1c2a15
+  - enabled: 1
+    path: Assets/Scenes/Levels Scene 3.unity
+    guid: 3c17437e196350f48ad9e3d996d6f2dc
   m_configObjects: {}
