@@ -11,5 +11,6 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 0;
         SceneManager.LoadScene(sceneID);
+        Time.timeScale = 0;
     }
 }
