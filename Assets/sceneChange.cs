@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class sceneChange : MonoBehaviour
 {
-    [SerializeField] private int loadScene;
+    [SerializeField] private string loadScene;
 
     void OnTriggerEnter(Collider other)
+{
+    if (other.gameObject.CompareTag("Player"))
     {
-        if (other.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(loadScene);
-        }
+            Debug.Log("It is working.");
     }
+}
 
 }

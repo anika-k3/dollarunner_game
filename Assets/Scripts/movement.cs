@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class movement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private int sceneID;
 
     // Update is called once per frame
     void Update()
@@ -49,5 +51,18 @@ public class movement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("NextLevel"))
+        {
+            Debug.Log("Trigger");
+            SceneManager.LoadScene(sceneID);
+        }
+       // Debug.Log("Trigger");
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collision");
     }
 }
