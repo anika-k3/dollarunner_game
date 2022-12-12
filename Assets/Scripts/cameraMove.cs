@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class cameraMove : MonoBehaviour
 {
-    public float speed;
+    public Transform player;
     void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        //transform.position = player.transform.position + new Vector3(5, 1, -5);
     }
 }
