@@ -14,6 +14,8 @@ public class movement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private int sceneID;
+    [SerializeField] private int sceneID2;
+    [SerializeField] private int highscore;
 
     // Update is called once per frame
     void Update()
@@ -59,10 +61,21 @@ public class movement : MonoBehaviour
             Debug.Log("Trigger");
             SceneManager.LoadScene(sceneID);
         }
-       // Debug.Log("Trigger");
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision");
+        if (collision.gameObject.CompareTag("Money"))
+        {
+            Debug.Log("Collision");
+            Destroy(collision.gameObject);
+            highscore += 1;
+        }
+        Debug.Log(highscore);
+
+        if (collision.gameObject.CompareTag("TriggersDeath"))
+        {
+            Debug.Log("Collision");
+            SceneManager.LoadScene(sceneID2);
+        }
     }
 }
