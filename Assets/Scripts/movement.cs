@@ -12,20 +12,28 @@ public class movement : MonoBehaviour
     private float speed = 8f;
     // Creates a float set to the jumping power of the character
     private float jumpingPower = 24f;
-    // 
+    // The player is currently facing right at the beginning of the game, so this is true
     private bool isFacingRight = true;
 
+    // To use the rigidbody component
     [SerializeField] private Rigidbody2D rb;
+    // A groundcheck to ensure the player is on the ground
     [SerializeField] private Transform groundCheck;
+    // A mask which is used to determine which layer is considered as ground to the player
     [SerializeField] private LayerMask groundLayer;
+    // An integer called sceneID, which will be called upon to change scenes
     [SerializeField] private int sceneID;
+    // An integer called sceneID2, which will be called upon to change scenes, a different scene than what was chosen in sceneID
     [SerializeField] private int sceneID2;
+    // The highscore component as an integer
     [SerializeField] private int highscore;
 
     void Update()
     {
+        // Returns the value of the x-axis
         horizontal = Input.GetAxisRaw("Horizontal");
 
+        //
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
