@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movement_city : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 24f;
+    private float speed = 14f;
+    private float jumpingPower = 22f;
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private int sceneID;
+    [SerializeField] private int sceneID2;
+    [SerializeField] private int highscore;
 
     // Update is called once per frame
     void Update()
@@ -50,12 +54,28 @@ public class movement_city : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("NextLevel"))
+        {
+            Debug.Log("Trigger");
+            SceneManager.LoadScene(sceneID);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Money"))
+        {
+            Debug.Log("Collision");
+            Destroy(collision.gameObject);
+            highscore += 1;
+        }
+        Debug.Log(highscore);
 
-    //public void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.tag == "NextLevel")
-    //    {
-    //        GameBehaviour.Instance.sceneToMoveTo();
-    //    }
-    // }
+        if (collision.gameObject.CompareTag("TriggersDeath"))
+        {
+            Debug.Log("Collision");
+            SceneManager.LoadScene(sceneID2);
+        }
+    }
 }
