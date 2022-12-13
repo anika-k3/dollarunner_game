@@ -563,7 +563,6 @@ GameObject:
   m_Component:
   - component: {fileID: 172790252}
   - component: {fileID: 172790255}
-  - component: {fileID: 172790254}
   - component: {fileID: 172790253}
   m_Layer: 0
   m_Name: Counter_Bill (7)
@@ -613,18 +612,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &172790254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172790251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e32a276d643a704ebbac07d0862b706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &172790255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -798,7 +785,6 @@ GameObject:
   m_Component:
   - component: {fileID: 369926442}
   - component: {fileID: 369926445}
-  - component: {fileID: 369926444}
   - component: {fileID: 369926443}
   m_Layer: 0
   m_Name: Counter_Bill (1)
@@ -848,18 +834,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &369926444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369926441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e32a276d643a704ebbac07d0862b706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &369926445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -922,7 +896,6 @@ GameObject:
   m_Component:
   - component: {fileID: 389462252}
   - component: {fileID: 389462255}
-  - component: {fileID: 389462254}
   - component: {fileID: 389462253}
   m_Layer: 0
   m_Name: Counter_Bill (2)
@@ -972,18 +945,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &389462254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389462251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e32a276d643a704ebbac07d0862b706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &389462255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1046,7 +1007,6 @@ GameObject:
   m_Component:
   - component: {fileID: 468818240}
   - component: {fileID: 468818239}
-  - component: {fileID: 468818238}
   - component: {fileID: 468818237}
   m_Layer: 0
   m_Name: Counter_Bill
@@ -1081,18 +1041,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &468818238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468818236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e32a276d643a704ebbac07d0862b706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &468818239
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1170,7 +1118,6 @@ GameObject:
   m_Component:
   - component: {fileID: 490428873}
   - component: {fileID: 490428876}
-  - component: {fileID: 490428875}
   - component: {fileID: 490428874}
   m_Layer: 0
   m_Name: Counter_Bill (4)
@@ -1220,18 +1167,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &490428875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490428872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e32a276d643a704ebbac07d0862b706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &490428876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3538,7 +3473,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1549206135}
   - component: {fileID: 1549206138}
-  - component: {fileID: 1549206137}
   - component: {fileID: 1549206136}
   m_Layer: 0
   m_Name: Counter_Bill (6)
@@ -3588,18 +3522,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &1549206137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549206134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e32a276d643a704ebbac07d0862b706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1549206138
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3663,7 +3585,6 @@ GameObject:
   - component: {fileID: 1562152256}
   - component: {fileID: 1562152255}
   - component: {fileID: 1562152254}
-  - component: {fileID: 1562152253}
   - component: {fileID: 1562152252}
   m_Layer: 0
   m_Name: Main Camera
@@ -3706,19 +3627,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1562152253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562152251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9512ab7ebc71452468a5e954a2b428f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1606032566}
 --- !u!81 &1562152254
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4674,7 +4582,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1930838094}
   - component: {fileID: 1930838097}
-  - component: {fileID: 1930838096}
   - component: {fileID: 1930838095}
   m_Layer: 0
   m_Name: Counter_Bill (3)
@@ -4724,18 +4631,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &1930838096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930838093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e32a276d643a704ebbac07d0862b706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1930838097
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5241,7 +5136,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2109702277}
   - component: {fileID: 2109702280}
-  - component: {fileID: 2109702279}
   - component: {fileID: 2109702278}
   m_Layer: 0
   m_Name: Counter_Bill (5)
@@ -5291,18 +5185,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &2109702279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109702276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e32a276d643a704ebbac07d0862b706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &2109702280
 SpriteRenderer:
   m_ObjectHideFlags: 0
