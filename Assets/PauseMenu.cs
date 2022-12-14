@@ -17,15 +17,20 @@ public class PauseMenu : MonoBehaviour
         // Everything in the background stops as time gets set to zero
         Time.timeScale = 0f;
     }
+    // Will play when the option "Resume" is selected from PauseMenu
     public void Resume()
     {
+        // Sets the scene as unactive, so that the panel will disappear
         pauseMenu.SetActive(false);
+        // Time will now be normal speed
         Time.timeScale = 1f;
     }
-    
+    // Will play when "Home" is selected from the PauseMenu, uses a sceneID integer to trigger the next scene
     public void Home(int sceneID)
     {
+        // The time scale is set back to 1, so it is now normal time
         Time.timeScale = 1f;
+        // Loads the selected scene, in this case, the menu
         SceneManager.LoadScene(sceneID);
     }
 }

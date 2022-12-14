@@ -14,7 +14,7 @@ public class ResumeMenu : MonoBehaviour
     {
         // Loads the scene selected 
         SceneManager.LoadScene(sceneID);
-        //
+        // Sets the time to normal
         Time.timeScale = 1;
     }
 }

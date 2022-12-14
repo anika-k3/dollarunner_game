@@ -33,26 +33,32 @@ public class movement : MonoBehaviour
         // Returns the value of the x-axis
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        //
+        // If the button allocated as jump is clicked (which is a custom Unity button, the jump button), and the character is on the ground then it will change the vector's positions
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
+            // rb.velocity represents the rate of change of the rigidbody's position, it is equal to a new vector with the x-axis' position of the rigibody and the jumping power of the character
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
 
+        // If the space bar is clicked and the position of the rigidbody's y-axis is greater than 0, then the positions will change
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
+            // Then there is a new vector that has the x-axis' position and the y-axis' position gets cut by half because the player has already jumped and needds to come back down
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
-
+        // Used to flip the player
         Flip();
     }
     private void FixedUpdate()
     {
+        // A new vector is created with the x-axis position of the horizontal movement of the player, multiplied by the speed, and the y-axis of the rigidbody's position
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
+    // When the player is grounded this will be true
     private bool isGrounded()
     {
+        // Checks to see if a collider is within a circle and returns the results
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 

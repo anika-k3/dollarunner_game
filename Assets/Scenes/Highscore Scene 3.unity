@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 955485250}
   - component: {fileID: 955485249}
   - component: {fileID: 955485248}
-  - component: {fileID: 955485247}
+  - component: {fileID: 955485251}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -400,19 +400,6 @@ RectTransform:
   m_AnchoredPosition: {x: -367.59, y: -154.05}
   m_SizeDelta: {x: 4.0803, y: 0.9649}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &955485247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955485245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a95ec77895b7a34ca2a88d373c12797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restartMenu: {fileID: 0}
 --- !u!114 &955485248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,9 +444,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 955485247}
-        m_TargetAssemblyTypeName: Restart, Assembly-CSharp
-        m_MethodName: RestartGame
+      - m_Target: {fileID: 955485251}
+        m_TargetAssemblyTypeName: PlayMenu, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -507,6 +494,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955485245}
   m_CullTransparentMesh: 1
+--- !u!114 &955485251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955485245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3463cbc8228a10f47a05d6cfbaae16d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playMenu: {fileID: 0}
 --- !u!1 &1520665872
 GameObject:
   m_ObjectHideFlags: 0
