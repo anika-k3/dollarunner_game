@@ -30,11 +30,12 @@ public class movement_city : MonoBehaviour
     [SerializeField] private int sceneID;
     // An integer called sceneID2, which will be called upon to change scenes, a different scene than what was chosen in sceneID
     [SerializeField] private int sceneID2;
-    [SerializeField] public int score;
-    [SerializeField] public int highscore;
+
+    public int score;
+    public int highscore;
 
 
-
+    public static movement_city CityMovementInst = new movement_city();
 
 
     void Update()
@@ -107,6 +108,8 @@ public class movement_city : MonoBehaviour
             highscore ++;
             //highscoreText.IncrementHighscore(highscore);
         }
+        // Sends the score to the console
+        Debug.Log(score);
         // Sends the highscore to the console
         Debug.Log(highscore);
 

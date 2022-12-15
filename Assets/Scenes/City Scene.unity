@@ -1764,7 +1764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791e97ba15f7b4f528bb62da2237dae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement_City: {fileID: 0}
+  script: {fileID: 0}
   scoreText: {fileID: 1282340162}
   highscoreText: {fileID: 133818039}
 --- !u!1 &1115394492

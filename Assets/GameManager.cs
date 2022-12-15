@@ -29,10 +29,10 @@ public class GameManager : MonoBehaviour
 
     void CheckHighScore()
     {
-        if (dollarCount > PlayerPrefs.GetInt("High Score",0))
+        if (dollarCount > PlayerPrefs.GetInt("Highscore",0))
         {
 
-            PlayerPrefs.SetInt("High Score", dollarCount);
+            PlayerPrefs.SetInt("Highscore", dollarCount);
         }
     }
 }
