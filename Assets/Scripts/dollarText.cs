@@ -9,6 +9,6 @@ public class DollarText : MonoBehaviour
 
     public void IncrementDollarCount(int dollarTotal)
     {
-        dollarText.text = $"Dollars: {dollarTotal}";
+        dollarText.text = $"Dollars:{dollarTotal}";
     }
 }

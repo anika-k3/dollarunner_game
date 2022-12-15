@@ -92,7 +92,8 @@ public class movement_city : MonoBehaviour
         {
             Debug.Log("Collision");
             Destroy(collision.gameObject);
-            highscore += 1;
+            highscore ++;
+            highscoreTest.IncrementHighscore(highscore);
         }
         // Sends the highscore to the console
         Debug.Log(highscore);
