@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 // Created a class for movement for the character
@@ -15,6 +16,13 @@ public class movement : MonoBehaviour
     // The player is currently facing right at the beginning of the game, so this is true
     private bool isFacingRight = true;
 
+    //Highscore Class
+    [SerializeField] DollarText dollarText;
+    // Highscore as an integer
+    int dollarCount;
+
+    [SerializeField] TextMeshProUGUI highscoreText;
+
     // To use the rigidbody component
     [SerializeField] private Rigidbody2D rb;
     // A groundcheck to ensure the player is on the ground
@@ -25,9 +33,8 @@ public class movement : MonoBehaviour
     [SerializeField] private int sceneID;
     // An integer called sceneID2, which will be called upon to change scenes, a different scene than what was chosen in sceneID
     [SerializeField] private int sceneID2;
-    // The highscore component as an integer
-    [SerializeField] private int highscore;
 
+    
     void Update()
     {
         // Returns the value of the x-axis
@@ -87,15 +94,41 @@ public class movement : MonoBehaviour
     // This code activates when there is a 2D Collision within objects
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         // If the player collides with a tag called Money, then the money disappears
         if (collision.gameObject.CompareTag("Money"))
         {
             Debug.Log("Collision");
             Destroy(collision.gameObject);
-            highscore += 1;
+
+            UpdateHighscoreText();
+
+            dollarCount++;
+            dollarText.IncrementDollarCount(dollarCount);
+            CheckHighscore();
+
+
+            void CheckHighscore()
+            {
+                if (dollarCount > PlayerPrefs.GetInt("Highscore", 0))
+                {
+                    PlayerPrefs.SetInt("Highscore", dollarCount);
+                }
+            }
+
+            void UpdateHighscoreText()
+            {
+                highscoreText.text = $"Highscore:{PlayerPrefs.GetInt("Highscore", 0)}";
+            }
+            // Sends the highscore to the console
+            Debug.Log(dollarCount);
+
+
+            //PlayerPrefs.SetInt("Highscore", dollarCount);
+            //PlayerPrefs.GetInt("Highscore");
         }
-        // Sends the highscore to the console
-        Debug.Log(highscore);
+
+        
 
         // If the player collides with an object called TriggersDeath, then the scene will change to the death scene
         if (collision.gameObject.CompareTag("TriggersDeath"))
