@@ -5416,6 +5416,7 @@ MonoBehaviour:
     m_Bits: 64
   sceneID: 13
   sceneID2: 14
+  dollarCount: 0
 --- !u!50 &1346125560
 Rigidbody2D:
   serializedVersion: 4

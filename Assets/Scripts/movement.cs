@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 // Created a class for movement for the character
 public class movement : MonoBehaviour
@@ -16,12 +17,6 @@ public class movement : MonoBehaviour
     // The player is currently facing right at the beginning of the game, so this is true
     private bool isFacingRight = true;
 
-    //Highscore Class
-    [SerializeField] DollarText dollarText;
-    // Highscore as an integer
-    int dollarCount;
-
-    [SerializeField] TextMeshProUGUI highscoreText;
 
     // To use the rigidbody component
     [SerializeField] private Rigidbody2D rb;
@@ -34,7 +29,11 @@ public class movement : MonoBehaviour
     // An integer called sceneID2, which will be called upon to change scenes, a different scene than what was chosen in sceneID
     [SerializeField] private int sceneID2;
 
-    
+    [SerializeField] private int highscore;
+
+
+
+
     void Update()
     {
         // Returns the value of the x-axis
@@ -98,35 +97,25 @@ public class movement : MonoBehaviour
         // If the player collides with a tag called Money, then the money disappears
         if (collision.gameObject.CompareTag("Money"))
         {
+
             Debug.Log("Collision");
             Destroy(collision.gameObject);
-
-            UpdateHighscoreText();
-
-            dollarCount++;
-            dollarText.IncrementDollarCount(dollarCount);
-            CheckHighscore();
+            highscore++;
 
 
-            void CheckHighscore()
-            {
-                if (dollarCount > PlayerPrefs.GetInt("Highscore", 0))
-                {
-                    PlayerPrefs.SetInt("Highscore", dollarCount);
-                }
-            }
 
-            void UpdateHighscoreText()
-            {
-                highscoreText.text = $"Highscore:{PlayerPrefs.GetInt("Highscore", 0)}";
-            }
+
+
+
+
+        }
             // Sends the highscore to the console
-            Debug.Log(dollarCount);
+            Debug.Log(highscore);
 
 
             //PlayerPrefs.SetInt("Highscore", dollarCount);
             //PlayerPrefs.GetInt("Highscore");
-        }
+        
 
         
 

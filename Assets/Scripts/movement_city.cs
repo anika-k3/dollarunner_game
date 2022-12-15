@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 // Created a class for movement for the character
 public class movement_city : MonoBehaviour
 {
+
+
+
+
     // Creates a float for the horizontal movement
     private float horizontal;
     // Creates a float set to the speed of the character's movements
@@ -25,11 +30,17 @@ public class movement_city : MonoBehaviour
     [SerializeField] private int sceneID;
     // An integer called sceneID2, which will be called upon to change scenes, a different scene than what was chosen in sceneID
     [SerializeField] private int sceneID2;
-    // The highscore component as an integer
-    [SerializeField] private int highscore;
+    [SerializeField] public int score;
+    [SerializeField] public int highscore;
+
+
+
+
 
     void Update()
     {
+
+
         // Returns the value of the x-axis
         horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -92,8 +103,9 @@ public class movement_city : MonoBehaviour
         {
             Debug.Log("Collision");
             Destroy(collision.gameObject);
+            score++;
             highscore ++;
-            highscoreTest.IncrementHighscore(highscore);
+            //highscoreText.IncrementHighscore(highscore);
         }
         // Sends the highscore to the console
         Debug.Log(highscore);
