@@ -31,8 +31,8 @@ public class movement_city : MonoBehaviour
     // An integer called sceneID2, which will be called upon to change scenes, a different scene than what was chosen in sceneID
     [SerializeField] private int sceneID2;
 
-    public int score;
-    public int highscore;
+    [SerializeField] public int score = 0;
+    [SerializeField] public int highscore = 0;
 
 
     public static movement_city CityMovementInst = new movement_city();
@@ -97,7 +97,7 @@ public class movement_city : MonoBehaviour
         }
     }
     // This code activates when there is a 2D Collision within objects
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         // If the player collides with a tag called Money, then the money disappears
         if (collision.gameObject.CompareTag("Money"))
